@@ -15,6 +15,7 @@ namespace Contacts
             String result = Convert.ToString(cmd.ExecuteScalar());
             con.Close();
             return result;
+            //testfor GIT
         }
     }
 }
