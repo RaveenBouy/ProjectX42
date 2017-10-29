@@ -529,6 +529,8 @@
             this.combine1.TabIndex = 89;
             this.combine1.UseVisualStyleBackColor = true;
             this.combine1.CheckedChanged += new System.EventHandler(this.combine1_CheckedChanged);
+            this.combine1.MouseLeave += new System.EventHandler(this.checkBleave);
+            this.combine1.MouseHover += new System.EventHandler(this.checkBhover);
             // 
             // Adjust
             // 
@@ -569,7 +571,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 314);
+            this.ClientSize = new System.Drawing.Size(878, 314);
             this.Controls.Add(this.infoboxx);
             this.Controls.Add(this.ans2);
             this.Controls.Add(this.Adjust);
