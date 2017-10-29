@@ -571,7 +571,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 314);
+            this.ClientSize = new System.Drawing.Size(771, 314);
             this.Controls.Add(this.infoboxx);
             this.Controls.Add(this.ans2);
             this.Controls.Add(this.Adjust);
