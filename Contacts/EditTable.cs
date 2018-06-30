@@ -11,8 +11,8 @@ namespace Contacts
         private int colmsno;
         int key;
         String text1;
-        private String datasource = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + "D:\\MS VS Projects\\Contacts\\Contacts\\Contacts.mdf" + ";" + "Integrated Security = True";
-        private String datasource2 = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + "D:\\MS VS Projects\\Contacts\\Contacts\\DBS.mdf" + ";Integrated Security=True";
+        private String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\TableList.mdf;Integrated Security=True";
+        private String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\DBS.mdf;Integrated Security=True";
 
         public EditTable()
         {

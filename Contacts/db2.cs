@@ -7,7 +7,10 @@ namespace Contacts
     {
         public string GetAllMembers(String sql2)
         {
-            String datasource = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + "D:\\MS VS Projects\\Contacts\\Contacts\\DBS.mdf" + ";Integrated Security=True";
+
+            
+            //String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\TableList.mdf;Integrated Security=True";
+            String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\DBS.mdf;Integrated Security=True";
             SqlConnection con = new SqlConnection(datasource);
             con.Open();
             String SQLL = sql2;
@@ -15,7 +18,6 @@ namespace Contacts
             String result = Convert.ToString(cmd.ExecuteScalar());
             con.Close();
             return result;
-            //testfor GIT
         }
     }
 }

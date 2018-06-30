@@ -16,7 +16,8 @@ namespace Contacts
     public partial class TableView : Form
     {
         public string tablenamex;
-        String datasource = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + "D:\\MS VS Projects\\Contacts\\Contacts\\Contacts.mdf" + ";" + "Integrated Security = True";
+        String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\TableList.mdf;Integrated Security=True";
+        String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\DBS.mdf;Integrated Security=True";
         String colms, id;
         String text1;
         int formx = 792, formy = 352, gridx = 649, gridy = 230;
@@ -33,7 +34,7 @@ namespace Contacts
         int calcclick = 0;
         int colmsno, col1, col2, col3, col4, col5, col6;
         int taxa, disa;
-        String[] tooltip = { "Adds selected operator automatically after each cell value.", "Check this if you want to perform manual calculations.", "Return to Form Adjust interface.","Calculate Both Tax and Discount."};
+        String[] tooltip = { "Adds selected operator automatically after each cell value.", "Check this if you want to perform manual calculations.", "Return to Form Adjust interface."};
 
         
         private void button2_Click_1(object sender, EventArgs e) // search
@@ -222,6 +223,11 @@ namespace Contacts
         {
             Members id = new Members();
            // String sql = "Select * from "+TableName.Text+"WHERE" + Convert.ToString(searchidtext.Text);";";
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -476,7 +482,11 @@ namespace Contacts
 
         private void combine1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(combine1.Checked == false)
+            {
+                taxa = 0;
+                disa = 0;
+            }
         }
 
         private void auto_MouseHover(object sender, EventArgs e) // auto hover ******************************************************************************
@@ -512,16 +522,6 @@ namespace Contacts
         private void ans2_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void checkBhover(object sender, EventArgs e)
-        {
-            infoboxx.Text = tooltip[3];
-        }
-
-        private void checkBleave(object sender, EventArgs e)
-        {
-            infoboxx.Text = "Hover over a control to get more information about it.";
         }
 
         private void calcout_Click(object sender, EventArgs e) // Calculate Button *****************************************************************************

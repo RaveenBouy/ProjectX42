@@ -529,8 +529,6 @@
             this.combine1.TabIndex = 89;
             this.combine1.UseVisualStyleBackColor = true;
             this.combine1.CheckedChanged += new System.EventHandler(this.combine1_CheckedChanged);
-            this.combine1.MouseLeave += new System.EventHandler(this.checkBleave);
-            this.combine1.MouseHover += new System.EventHandler(this.checkBhover);
             // 
             // Adjust
             // 

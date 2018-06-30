@@ -29,6 +29,8 @@ namespace Contacts
         Boolean increment = true;
         String IncrementS;
         // true for auto increment...
+        String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\TableList.mdf;Integrated Security=True";
+        String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\DBS.mdf;Integrated Security=True";
         String[] keywordlist = {"ADD","EXTERNAL","PROCEDURE","ALL","FETCH","PUBLIC","ALTER","FILE","RAISERRORAND","FILLFACTOR","READANY","FOR","READTEXT",
                    "AS","FOREIGN","RECONFIGUREASC","FREETEXT","REFERENCES","AUTHORIZATION","FREETEXTTABLE","REPLICATION","BACKUP","FROM",
                    "RESTORE","BEGIN","FULL","RESTRICTBETWEEN","FUNCTION","RETURN","BREAK","GOTO","REVERT","BROWSE","GRANT","REVOKE",
@@ -458,9 +460,7 @@ namespace Contacts
             int Errorxxx = 3;
 
             if (sender is Button)
-            {
-
-                String datasource = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + "D:\\MS VS Projects\\Contacts\\Contacts\\Contacts.mdf" + ";" + "Integrated Security = True";
+            {   
                 string sql = "SELECT count(*) as IsExists FROM dbo.sysobjects where id = object_id('[dbo].[" + Convert.ToString(TableName.Text) + "]')";
                 int xx;
                 for (xx = 0; xx < keywordlist.Length; xx++)

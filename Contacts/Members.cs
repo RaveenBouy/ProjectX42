@@ -16,14 +16,12 @@ namespace Contacts
         {
             public DataTable GetAllMembers(String sql2)
             {
-                DataTable  dt = new DataTable();      
-            
-                String datasource = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + "D:\\MS VS Projects\\Contacts\\Contacts\\Contacts.mdf" + ";" + "Integrated Security = True";
+                DataTable  dt = new DataTable();
+                String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\TableList.mdf;Integrated Security=True";
+                String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\DBS.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(datasource);
-
-                String SQLL = sql2;
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = SQLL;
+                cmd.CommandText = sql2;
                 cmd.Connection = con;
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);        
                 adp.Fill(dt);
@@ -31,3 +29,4 @@ namespace Contacts
             }
         }   
 }
+    
