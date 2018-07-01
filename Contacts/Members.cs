@@ -17,8 +17,8 @@ namespace Contacts
             public DataTable GetAllMembers(String sql2)
             {
                 DataTable  dt = new DataTable();
-                String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\TableList.mdf;Integrated Security=True";
-                String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\DBS.mdf;Integrated Security=True";
+                String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\TableList.mdf;Integrated Security=True";
+                String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DBS.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(datasource);
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = sql2;

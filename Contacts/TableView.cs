@@ -16,8 +16,8 @@ namespace Contacts
     public partial class TableView : Form
     {
         public string tablenamex;
-        String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\TableList.mdf;Integrated Security=True";
-        String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\DBS.mdf;Integrated Security=True";
+        String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\TableList.mdf;Integrated Security=True";
+        String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DBS.mdf;Integrated Security=True";
         String colms, id;
         String text1;
         int formx = 792, formy = 352, gridx = 649, gridy = 230;

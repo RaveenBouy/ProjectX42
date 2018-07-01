@@ -29,8 +29,8 @@ namespace Contacts
         Boolean increment = true;
         String IncrementS;
         // true for auto increment...
-        String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\TableList.mdf;Integrated Security=True";
-        String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MS_VS_Projects\GitHubProjectX\ProjectX42\Contacts\DBS.mdf;Integrated Security=True";
+        String datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\TableList.mdf;Integrated Security=True";
+        String datasource2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DBS.mdf;Integrated Security=True";
         String[] keywordlist = {"ADD","EXTERNAL","PROCEDURE","ALL","FETCH","PUBLIC","ALTER","FILE","RAISERRORAND","FILLFACTOR","READANY","FOR","READTEXT",
                    "AS","FOREIGN","RECONFIGUREASC","FREETEXT","REFERENCES","AUTHORIZATION","FREETEXTTABLE","REPLICATION","BACKUP","FROM",
                    "RESTORE","BEGIN","FULL","RESTRICTBETWEEN","FUNCTION","RETURN","BREAK","GOTO","REVERT","BROWSE","GRANT","REVOKE",
